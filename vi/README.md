@@ -1,6 +1,6 @@
 # Javascript trong một bức hình
 
-[ Ngôn ngữ: [English](README.md), [中文](README-zh.md), [正體中文](README-zh_TW.md), [Português](README-pt_BR.md), [Español](README-es_MX.md), [Tiếng Việt](README-vi.md)]
+[ Ngôn ngữ: [English](../README.md), [中文](README-zh.md), [正體中文](README-zh_TW.md), [Português](README-pt_BR.md), [Español](README-es_MX.md), [Tiếng Việt](README.md)]
 
 <!-- BADGES/ -->
 
