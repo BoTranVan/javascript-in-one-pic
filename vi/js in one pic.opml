@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>js in one pic</title>
+</head>
+<body>
+<outline text="Javascript trong một bức hình"><outline text="Identifier"><outline text="Phân biệt chữ hoa-thường"><outline text="a != A"></outline>
+</outline>
+<outline text="bắt đầu: letters, _,  $"><outline text="kí tự: [ascii, unicode]"></outline>
+</outline>
+<outline text="các từ khoá"><outline text="break; case; catch; continue; default; delete; do; else; finally; for; function; if; in; instanceof; new; return; switch; this; throw; try; typeof; var; void; while; with"></outline>
+</outline>
+<outline text="từ khoá"><outline text="Không ràng buộc"><outline text="class; const; enum; export; extends; import; super;"></outline>
+</outline>
+<outline text="&apos;use strict&apos;"><outline text="implements; interface; let; package; private; protected; public; static; yield;"></outline>
+</outline>
+</outline>
+<outline text="biến"><outline text="var a; // local"></outline>
+<outline text="a = 123; // global"></outline>
+</outline>
+</outline>
+<outline text="comments"><outline text="// một dòng đơn"></outline>
+<outline text="/* nhiều dòng comments */"></outline>
+</outline>
+<outline text="kiểu dữ liệu"><outline text="Number [Primitive like]"><outline text="typeof"><outline text="&apos;number&apos;"></outline>
+</outline>
+<outline text="value"><outline text="0"></outline>
+<outline text="1.2"></outline>
+<outline text="045"></outline>
+<outline text="0x56"></outline>
+<outline text="0.314e2"></outline>
+<outline text="NaN"></outline>
+</outline>
+<outline text="Number()"><outline text="parseInt(&quot;2.7&quot;, 10); 	 // 2"><outline text="parseInt(&apos;10&apos;, 2); // 2"></outline>
+</outline>
+<outline text="parseFloat(&apos;2.5&apos;); 		 // 2.5"></outline>
+<outline text="isNaN(parseFloat(&apos;a&apos;)); // true"></outline>
+</outline>
+<outline text="+-*/%"></outline>
+<outline text="&lt;, &lt;=, &gt;, &gt;=, !=, =="></outline>
+</outline>
+<outline text="String [Primitive like]"><outline text="typeof"><outline text="&apos;string&apos;"></outline>
+</outline>
+<outline text="value"><outline text="&quot;Hello&quot;"></outline>
+<outline text="&apos;World&apos;"></outline>
+</outline>
+<outline text="String()/toString()"><outline text="var a = 8; a.toString(2); // &apos;1000&apos;"></outline>
+</outline>
+<outline text="immutable"><outline text="var a = &apos;ABC&apos;; a[0]; 				// &apos;A&apos; a[0] = &apos;D&apos;; a; 					// &apos;ABC&apos;"></outline>
+<outline text="var a = &apos;abc&apos;; a = a + &apos;d&apos;; a; 					// &apos;abcd&apos;"></outline>
+</outline>
+<outline text="+"></outline>
+<outline text="&lt;, &lt;=, &gt;, &gt;=, !=, =="></outline>
+</outline>
+<outline text="Boolean [Primitive like]"><outline text="typeof"><outline text="&apos;boolean&apos;"></outline>
+</outline>
+<outline text="value"><outline text="true"></outline>
+<outline text="false"></outline>
+</outline>
+<outline text="Boolean()"><outline text="number"><outline text="Boolean(0); 			// false"></outline>
+<outline text="Boolean(NaN); 		// false"></outline>
+<outline text="Boolean(!0); 			// true"></outline>
+</outline>
+<outline text="string"><outline text="Boolean(&apos;&apos;); 			 // false"></outline>
+<outline text="Boolean(&apos;*&apos;); 		 // true"></outline>
+</outline>
+<outline text="object"><outline text="Boolean(null);       // false"></outline>
+<outline text="Boolean({}); 			 // true"></outline>
+</outline>
+<outline text="undefined"><outline text="Boolean(undefined);// false"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="Undefined [Primitive like]"><outline text="typeof"><outline text="&apos;undefined&apos;"></outline>
+</outline>
+<outline text="value"><outline text="undefined"></outline>
+</outline>
+<outline text="undefined != Not defined"><outline text="undefined == undefined; 	// true var a; a == undefined; 				// true console.log(d); 				// Error"></outline>
+</outline>
+</outline>
+<outline text="Object (basic)"><outline text="typeof"><outline text="&apos;object&apos;"></outline>
+</outline>
+<outline text="{}"><outline text="var p = {   name: &apos;Ad&apos;,   &apos;age&apos;: 24 };"></outline>
+<outline text="var q = {}; q.name = &apos;Bob&apos;; q.age  = 24;  console.log(q.name);				 // &apos;Bob&apos; console.log(q[&apos;age&apos;]);				 // 24"></outline>
+</outline>
+<outline text="new Object()"><outline text="var p   = new Object(); p.sayHi = function(){   console.log(&apos;Hi!&apos;); } p.sayHi(); 					// &apos;Hi!&apos;"></outline>
+</outline>
+<outline text="Null //[Primitive like]"><outline text="typeof"><outline text="&apos;object&apos;"></outline>
+</outline>
+<outline text="value"><outline text="null"></outline>
+</outline>
+<outline text="&quot;undefined object&quot;"><outline text="null == undefined; // true"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="Function (basic)"><outline text="typeof"><outline text="&apos;function&apos;"></outline>
+</outline>
+<outline text="create"><outline text="var a = function(arg1, arg2){   //func body; }"></outline>
+<outline text="function a(arg1, arg2){   //func body; }"></outline>
+<outline text="(function(arg1,arg2){   //func body; })"></outline>
+</outline>
+<outline text="bên trong function"><outline text="đối số"><outline text="// by order"><outline text="var f = function(x, y){   console.log(&apos;x: &apos; + x + &apos;, y: &apos; + y); }; var x = &apos;x&apos;, y = &apos;y&apos;; f(x, y);					 // x: x, y: y f(y, x);					 // x: y, y: x"></outline>
+</outline>
+<outline text="undefined"><outline text="var f = function(x){   console.log(x); }; f();							// undefined"></outline>
+</outline>
+<outline text="arguments"><outline text="var f = function(){   console.log(arguments); }; f(3,2,1);						// { &apos;0&apos;: 3, &apos;1&apos;: 2, &apos;2&apos;: 1 }"></outline>
+</outline>
+</outline>
+<outline text="return"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="toán tử"><outline text="+-*/%"><outline text="ép kiểu"><outline text="+"><outline text="string &gt; number &gt; boolean"><outline text="&apos;1&apos;+2"></outline>
+<outline text="3+&apos;4&apos;"></outline>
+<outline text="&apos;5&apos;+false"></outline>
+<outline text="6+true"></outline>
+</outline>
+</outline>
+<outline text="-"><outline text="number &gt; string &gt; boolean"><outline text="&apos;1&apos;-2"></outline>
+<outline text="3-&apos;4&apos;"></outline>
+<outline text="&apos;5&apos;-false"></outline>
+<outline text="6-true"></outline>
+</outline>
+</outline>
+</outline>
+</outline>
+<outline text="++a a-- a+=1 a-=1"></outline>
+<outline text="compare"><outline text="&gt;, &gt;=, &lt;, &lt;="></outline>
+<outline text="==, !="><outline text="			// chỉ so sánh giá trị"></outline>
+</outline>
+<outline text="===, !=="><outline text="		 // so sánh cả giá trị và kiểu dữ liệu"></outline>
+</outline>
+<outline text="casting"><outline text="a &gt; b; 	// a - b &gt; 0"></outline>
+</outline>
+</outline>
+<outline text="! &amp;&amp; ||"><outline text="!true; 			// false"></outline>
+<outline text="true &amp;&amp; false; 	// false"></outline>
+<outline text="false || true; 	// true"></outline>
+</outline>
+</outline>
+<outline text="Kiểu tham chiếu"><outline text="Function"><outline text="typeof"><outline text="&apos;function&apos;"></outline>
+</outline>
+<outline text="thuộc tính"><outline text="f.length;"></outline>
+</outline>
+<outline text="as value (callback)"><outline text="var api = function(){   return {     name: &apos;rainy&apos;,     age: 24   }; }; var handler = function(d){   console.log(&apos;Name: &apos;+d.name+&apos;, Age: &apos;+d.age); }; var request = function(api, callback){   callback(api()); };  request(api, handler);	// Name: rainy, Age: 24"></outline>
+</outline>
+<outline text="methods"><outline text="apply/call/bind"><outline text="// func.apply(thisObj, [arg1, arg2, ...]); // func.call(thisObj, arg1, arg2, ...); // func.bind(thisObj, arg1, arg2, ...); // about thisObj, see `Scope`"></outline>
+<outline text="var sayHi = function(name){   console.log(&apos;Hello, &apos; + name + &apos;!&apos;); }; sayHi.call(this, &apos;rainy&apos;);					// Hello, rainy! sayHi.apply(this, [&apos;rainy&apos;]);				// Hello, rainy! sayHi.bind(this, &apos;rainy&apos;)();				// Hello, rainy!"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="Array"><outline text="typeof"><outline text="&apos;object&apos;"></outline>
+</outline>
+<outline text="var a = [1, 2, &apos;3&apos;, [4, true]];"></outline>
+<outline text="var a = new Array(1, 2, &apos;3&apos;, [4, true]);"></outline>
+<outline text="properties"><outline text="a.length; 			  // 4"></outline>
+</outline>
+<outline text="methods"><outline text="a[0] == 1;             // true"></outline>
+<outline text="a[3][1] == true;       // true"></outline>
+<outline text="a.slice(0, 2);         // [1, 2]"></outline>
+<outline text="a.indexOf(1); 			// 0"></outline>
+<outline text="a.push({}); 	 			// return a.length(Mod)"></outline>
+<outline text="a.pop();   				// return popped element(Mod)"></outline>
+<outline text="a.join(&apos;-&apos;); 				// ?"><outline text="a.toString() == a.join(&apos;,&apos;);"></outline>
+<outline text="var s = &apos;a,b,c,d&apos;; s.split(&apos;,&apos;); // [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;]"></outline>
+</outline>
+<outline text="a.concat([&apos;a&apos;, &apos;b&apos;]);	// VS push()"></outline>
+<outline text="map/reduce"><outline text="// arr.map(callback, thisObj)  /* callback = function(element, index, arr){  *   return element to the same pos of (returned)arr;  * };  */  [55, 44, 33, 22, 11].map(function(e, i, arr){   return e/(arr.length-i); });								// [ 11, 11, 11, 11, 11 ];"></outline>
+<outline text="// arr.reduce(callback, init);  /* callback = function(prev, curr, index, arr){  *   curr walk through   *     arr.slice(init != undefined ? 0 : 1, arr.length);  *   prev cache last returned value start with:   *     (init != undefined ? init : arr[0]);  * };  */  [55, 44, 33, 22, 11].reduce(function(p, c, i, arr){   return p + c/(arr. length-i); }, 55);						// 0; "></outline>
+</outline>
+<outline text="filter/some/every"></outline>
+<outline text="shift/unshift/sort/reverse/splice"><outline text="// sẽ làm thay đổi array"></outline>
+</outline>
+</outline>
+<outline text="iteration"><outline text="for(var i = 0; i &lt; a.length; i++){   console.log(a[i]); }"></outline>
+<outline text="a.forEach(function(ele){   console.log(ele); });"></outline>
+</outline>
+</outline>
+<outline text="Object (OOP)"><outline text="root of everything."></outline>
+<outline text="Constructor"><outline text="function Person(name){   this.name = name;   this.sayHi= function(){     console.log(&apos;Hi &apos; + this.name + &apos;!&apos;);   }; };  var p1 = new Person(&apos;Ad&apos;); var p2 = new Person(&apos;Bob&apos;);  p1.name							// &apos;Ad&apos; p2.sayHi();						// &apos;Hi Bob!&apos;  p1.constructor === Person		// true p1 instanceof Person			// true p1.sayHi == p2.sayHi			// false"></outline>
+</outline>
+<outline text="prototype chain"><outline text="function Person(){}; Person.prototype.name = &apos;Person&apos;;  var p1  = new Person(); var p2  = new Person(); p2.name = &apos;rainy&apos;;  console.log(p1.name);					// &apos;Person&apos; console.log(p2.name);					// &apos;rainy&apos;"><outline text="Person"><outline text="name"><outline text="&apos;Person&apos;"></outline>
+</outline>
+</outline>
+<outline text="p1 = new Person();"><outline text="prototype"></outline>
+<outline text="age"><outline text="24"></outline>
+</outline>
+</outline>
+<outline text="p2 = new Person();"><outline text="prototype"></outline>
+<outline text="name"><outline text="&apos;rainy&apos;"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="p1 instanceof Person						// true p1.age = 24;  p1.hasOwnProperty(&apos;name&apos;);				// false Person.hasOwnProperty(&apos;name&apos;);		// true  p1.hasOwnProperty(&apos;age&apos;);				// true &apos;name&apos; in p1								// true &apos;age&apos; in Person							// false"></outline>
+<outline text="// Các instances đều sử dụng chung các thuộc tính trong prototype Person.prototype.friends = [&apos;Ad&apos;, &apos;Bob&apos;];  p1.friends.pop();						// &apos;Bob&apos; console.log(p2.friends);				// [&apos;Ad&apos;]  // Combine constructor &amp; prototype function Person(){   this.friends = [&apos;Ad&apos;, &apos;Bob&apos;]; }; Person.prototype.name = &apos;Person&apos;;	"></outline>
+</outline>
+<outline text="kế thừa"><outline text="prototype chain"><outline text="function Father(){}; Father.prototype.familyName = &apos;Good&apos;;  function Child(){}; Child.prototype = new Father();  var c = new Child(); console.log(c.familyName);				// &apos;Good&apos;"></outline>
+</outline>
+<outline text="constructor"><outline text="function Father(){   this.familyName = &apos;Good&apos;; };  function Child(){   Father.call(this); };  var c = new Child(); console.log(c.familyName);					// &apos;Good&apos;"></outline>
+</outline>
+</outline>
+</outline>
+</outline>
+<outline text="cấu trúc điều khiển"><outline text="if"><outline text="if(cond){   state1; }else if(cond2){   state2; }else{   state3; }"></outline>
+<outline text="false ? a : b"></outline>
+</outline>
+<outline text="switch"><outline text="switch (day) {   case MON:     break;   case TUE:     break;   case WEN:     break;   default: }"></outline>
+</outline>
+<outline text="while"><outline text="do {   state1; } while(cond)"></outline>
+<outline text="while(cond){   state1; }"></outline>
+<outline text="break; continue"></outline>
+</outline>
+<outline text="for"><outline text="for(var i = 0; i &lt; len; i++){   state1; }"></outline>
+<outline text="for(var k in Obj){   // if Obj.hasOwnProperty(k){     console.log(&apos;Obj[&apos; + k + &apos;] = &apos; + Obj[k]);   // } }"></outline>
+</outline>
+<outline text="try/catch/finally"><outline text="var a = {}; try{   a.f(); }catch(e){   console.log(e instanceof TypeError);    // true   (function(){ 		console.log(&apos;a.f()&apos;);				  // &apos;a.f()&apos;    })(); }finally{   console.log(&apos;always&apos;);					  // &apos;always&apos; }"></outline>
+</outline>
+</outline>
+<outline text="Scope"><outline text="Closure"><outline text="   +-------------------+      +-----------------+
+   |Execution context  |  +---+[Scope chain]    |
+   +-------------------+  |   +-----------------+
++&gt; | var x = 100;      |  |   |[Function inc]   |
+|  | var inc1 = inc(); +--+   |  +              |
+|  | var inc2 = inc(); +--+   |  +-&gt; x;         |
+|  |                   |      |  |              |
+|  | inc1();           |      |  +-&gt; [Function] |
+|  | inc1();           |      |        +        |
+|  | inc2();           |      |        +-&gt; x++; |
+|  | inc1();           |      |                 |
+|  | inc2();           |      +-----------------+
++--+ x;                |          http://rainy.im
+ (http://rainy.im)   |                   |                         
+   +-------------------+                         "></outline>
+</outline>
+<outline text="Scope chain"><outline text="+--------------------------------------------+
+|Scope Chain                                 |
++--------------------------------------------+
++-+global [Variable Object]                  |
+| |                                          |
+| +-&gt; var x;                                 |
+| |                                          |
+| | &lt;---------------+                        |
+| |                 +                        |
+| +-&gt; function a() [Variable Object]&lt;+       |
+| |      +                           |       |
+| |      |                           |       |
+| |      +--&gt; var x;                 |       |
+| |      |                           |       |
+| |      |                           +       |
+| |      +--&gt; function b() [Variable Object] |
+| |                                          |
+| | &lt;---------------+                        |
+| |                 +                        |
+| +-&gt; function c() [Variable Object]&lt;+       |
+| |      +                           |       |
+| |      |                           |       |
+| |      +--&gt; var x;                 |       |
+| |      |                           |       |
+| |      |                           +       |
+| |      +--&gt; function d() [Variable Object] |
+| |                                          |
+| v                                          |
+|                                            |
++--------------------------------------------+"></outline>
+</outline>
+<outline text="Execution context"><outline text="context stack"><outline text="+-----------------------------------+                          
+|function b() // create new context +-----+                    
++-----------------------------------+     |                    
+|Variable Object = {                |     |   +---------------+
+|  arguments = ...;                 |     |   |               |
+|                                   |     |   |               |
+|                                   |     |   |               |
+|};                                 |     |   |               |
+|Scope chain =                      |     |   |       .       |
+| +-------------------------------+ |     |   |       .       |
+| |global                         | |     |   |       .       |
+| |  +---&gt; f = &apos;no&apos;;              | |     |   |               |
+| |  |                            | |     |   |               |
+| |  +---&gt; function a()           | |     |   |               |
+| |           +---&gt; f = &apos;ye&apos;      | |     |   +---------------+
+| |           |                   | |     +-&gt; |function b     |
+| |           +---&gt; function b()  | |         +---------------+
+| |                    +---&gt;      | |         |function a     |
+| |                    |          | |         +---------------+
+| |                    +---&gt;      | |         |global context |
+| |                               | |         +---------------+
+| +-------------------------------+ |           Context Stack  
+|this = {Object owns b};            |                          
++-----------------------------------+           http://rainy.im"></outline>
+</outline>
+<outline text="global"><outline text="+-------------+           +-----------------------+
+|Node         +------+    |Execution Context      |
++-------------+      |    +-----------------------+
+|global = {   |      +--&gt; |[Variable Object] = {  |
+|             |      |    |                       |
+|};           |      |    |  variables            |
++--------------      |    |                       |
+                     |    |  data                 |
+                     |    |                       |
+                     |    |  functions            |
++--------------      |    |                       |
+|Browser      +------+    |  objects              |
++-------------+           |                       |
+|window = {   |           |  ...                  |
+|             |           |                       |
+|};           |           |};                     |
++-------------+           +-----------------------+"></outline>
+</outline>
+</outline>
+</outline>
+<outline text="Các mẹo"></outline>
+</outline>
+</body>
+</opml>
